@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import CommentsDetail from './CommentsDetail'
+import ApprovalCard from './ApprovalCard'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <div className="ui container comments">
+       <ApprovalCard>
+        <CommentsDetail AuthorName="Jane" Text="okay okay" Time="Today 6:00PM"/>
+        </ApprovalCard>
+        <ApprovalCard>
+        <CommentsDetail AuthorName="Doe" Text="bye okay" Time="Today 6:00PM"/>
+        </ApprovalCard>
+        <ApprovalCard>
+        <CommentsDetail AuthorName="James"
+         Text="bye okay" Time="Today 6:00PM"/>
+         </ApprovalCard>
+    </div> 
+  )
 }
 
 export default App;
